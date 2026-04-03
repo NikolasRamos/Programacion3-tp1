@@ -53,3 +53,35 @@ body {
     border: 1px solid #00c6ff;
     box-shadow: 0 0 20px rgba(0,198,255,0.4);
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(10, 15, 28, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00c6ff;
+}
+
+
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+
+.nav a:hover {
+    color: #00c6ff;
+    text-shadow: 0 0 8px #00c6ff;
+}
