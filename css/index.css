@@ -54,25 +54,6 @@ body {
     box-shadow: 0 0 20px rgba(0,198,255,0.4);
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(135deg, #050a18 0%, #24273d 100%);
-    padding: 8px 48px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-/* LOGO */
-header h1 {
-    background: linear-gradient(90deg, #0066CC, #6A1B9A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 2rem;
-}
-
 /* NAV */
 nav ul {
     list-style: none;
@@ -102,7 +83,7 @@ nav a:hover {
 }
 
 .logo img {
-    height: 50px;
+    height: 100px;
     width: auto;
 }
 
@@ -110,8 +91,52 @@ nav a:hover {
     margin: 0;
     font-size: 1.8rem;
 }
-.logo h1 {
-    background: linear-gradient(90deg, #00D2FF, #6A1B9A);
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #050a18 0%, #24273d 100%);
+    color: #3b3b3b;
+    padding: 8px 48px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header div {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+header h1 {
+    align-content: center;
+    background: linear-gradient(90deg, #0066CC, #6A1B9A);
+
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+nav li{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0px 4px;
+}
+
+nav a {
+    color: #F8FAFC;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #00D2FF;
 }
