@@ -9,7 +9,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: radial-gradient(circle at top right, #1a1c2c, #050a18);
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
 
 /*--Header--*/
@@ -53,7 +59,7 @@ nav li{
 }
 
 nav a {
-    color: #F8FAFC;
+    color: #cbd5ff;
     text-decoration: none;
     transition: color 0.3s ease;
     font-size: 1.2rem;
@@ -74,7 +80,7 @@ nav a:hover {
 }
 
 h2 { /* "Conce al equipo" */
-    color: #F8FAFC;
+    color: #cbd5ff;
     font-size: 2.3rem;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -146,7 +152,7 @@ footer {
     padding: 16px;
     font-size: 16px;
     gap: 80px;
-    color: #F8FAFC;
+    color: #cbd5ff;
     background:  #050a18;
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.597);
 }
@@ -180,7 +186,7 @@ footer a, p {
 
 .column2 a, .column3 a {
     text-decoration: none;
-    color: #F8FAFC;
+    color: #cbd5ff;
 }
 
 .column2 a:hover, 
