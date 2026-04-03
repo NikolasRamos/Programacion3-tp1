@@ -95,3 +95,23 @@ nav a {
 nav a:hover {
     color: #00D2FF;
 }
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+.logo h1 {
+    background: linear-gradient(90deg, #00D2FF, #6A1B9A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
