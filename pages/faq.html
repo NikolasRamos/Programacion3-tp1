@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
+<style>
+    header {
+      display: flex;              /* Activa el modelo flexbox */
+      justify-content: flex-end;  /* Mueve el contenido a la derecha */
+      background-color: #333;     /* Color de fondo */
+      padding: 10px;
+    }
+
+    /* Estilos de la lista de navegación */
+    nav ul {
+      list-style: none;           /* Quita viñetas */
+      margin: 0;
+      padding: 0;
+      display: flex;              /* Pone los <li> en fila */
+      gap: 20px;                  /* Espacio entre enlaces */
+    }
+
+    nav ul li a {
+      color: white;               /* Texto blanco */
+      text-decoration: none;      /* Quita subrayado */
+      font-weight: Arial;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;             /* Color al pasar el mouse */
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 20px;
+    }
+    .faq-recuadro {
+        max-width: 800px;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    details {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+    summary {
+        font-weight: bold;
+        cursor: pointer;
+        color: #007BFF;
+    }
+    p {
+        margin-top: 10px;
+        color: #555;
+    }
+</style>
+</head>
+<body>
+    <header>
+    <nav>
+      <ul>
+        <li><a href="pagina-andres.html">Home</a></li>
+        <li><a href="pagina-maria.html">Servicios</a></li>
+        <li><a href="pagina-juan.html">Equipo</a></li>
+        <li><a href="pagina-lucia.html">Pedido</a></li>
+        <li><a href="pagina-lucia.html">Contacto</a></li>
+        <li><a href="pagina-lucia.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    
+    <div class="faq-recuadro">
+        <h1>Preguntas Frecuentes (FAQ)</h1>
+
+        <details>
+            <summary>¿Qué métodos de pago aceptan?</summary>
+            <p>Aceptamos tarjetas de crédito, débito, MercadoPago y Pago Facil.</p>
+        </details>
+
+        <details>
+            <summary>¿Cómo recibo mi juego después de comprarlo?</summary>
+            <p>Una vez confirmado el pago, recibirás un correo con el código de activación.</p>
+        </details>
+
+        <details>
+            <summary>¿Puedo devolver un juego digital?</summary>
+            <p>Los juegos digitales no tienen devolución, salvo que el código esté defectuoso.</p>
+        </details>
+
+        <details>
+            <summary>¿Qué requisitos necesita mi PC?</summary>
+            <p>En cada producto encontrarás los requisitos mínimos y recomendados.</p>
+        </details>
+
+        <details>
+            <summary>¿Dónde contacto al soporte técnico?</summary>
+            <p>Podés escribirnos a soporte@tiendavideojuegos.com.</p>
+        </details>
+    </div>
+</body>
+</html>
