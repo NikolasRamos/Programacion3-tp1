@@ -23,8 +23,8 @@ body {
     color: #cbd5ff;
     font-weight: bold;
     background-image: url("../assets/img/contacto/Fondo_contacto.png");
-    background-size: cover;       /* hace que ocupe toda la pantalla */
-    background-repeat: no-repeat; /* evita que se repita */
+    background-size: cover;       
+    background-repeat: no-repeat; 
     background-position: center;
 }
 
@@ -59,10 +59,10 @@ header {
 }
 
 header .brand {
-    display: flex;          /* 🔑 logo y texto en fila */
-    flex-direction: row;    /* explícitamente horizontal */
-    align-items: center;    /* centrados verticalmente */
-    gap: 10px;              /* espacio entre logo y texto */
+    display: flex;          
+    flex-direction: row;    
+    align-items: center;    
+    gap: 10px;              
 }
 
 
