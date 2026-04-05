@@ -3,32 +3,32 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(135deg, #0a0f1c, #0d1b2a);
     color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 20px;
 }
-
 .hero h1 {
     font-size: 42px;
 }
 
 .hero p {
-    color: #b0c4de;
+    color: #dbe5f1;
 }
 
 .btn {
-    background: linear-gradient(90deg, #00c6ff, #0072ff);
-    padding: 12px 25px;
-    border-radius: 25px;
-    color: white;
-    text-decoration: none;
     display: inline-block;
     margin-top: 20px;
-    transition: 0.3s;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
-
 .btn:hover {
     box-shadow: 0 0 15px #00c6ff;
 }
@@ -139,4 +139,105 @@ nav a {
 
 nav a:hover {
     color: #00D2FF;
+}
+main {flex: 10;
+
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 16px;
+    font-size: 16px;
+    gap: 80px;
+    color: #F8FAFC;
+    background:  #050a18;
+    box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.597);
+}
+
+footer div {
+    padding-right: 80px;
+    min-height: 80px;
+    box-shadow: 2px 0px 0 rgba(69, 67, 67, 0.185);
+}
+
+footer a, p {
+    margin-bottom: 2px;
+}
+
+.column1 {
+    display: flex;
+    align-items: center;
+    box-shadow:
+        -2px 0px 0 rgba(110, 106, 106, 0.185),
+        2px 0px 0 rgba(110, 106, 106, 0.185);
+    padding-left: 80px;
+}
+
+.column2 ul, .column3 ul{
+    list-style-type: none;
+}
+
+.column2 li {
+    text-align: start;
+}
+
+.column2 a, .column3 a {
+    text-decoration: none;
+    color: #F8FAFC;
+}
+
+.column2 a:hover, 
+.column3 a:hover {
+    color: #00D2FF;
+}
+
+.column4 p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.servicios-preview {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.servicios-preview p {
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+
+.contenido {
+    text-align: center;
+    max-width: 500px;
+}
+
+
+.img-lado {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.img-lado:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
 }
