@@ -1,3 +1,4 @@
+/* Estilos globales*/
 * {
     margin:0;
     padding:0;
@@ -5,20 +6,50 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at top right, #1a1c2c, #050a18);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
+main {
+    flex: 1;
+}
+
+/*--Header--*/
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffff;
+    background: linear-gradient(135deg, #050a18 0%, #24273d 100%);
     color: #3b3b3b;
-    padding: 24px 48px;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+    padding: 8px 48px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+header div {
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
+
+header h1 {
+    align-content: center;
+    background: linear-gradient(90deg, #0066CC, #6A1B9A);
+    
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 nav li{
@@ -28,36 +59,36 @@ nav li{
 }
 
 nav a {
+    color: #cbd5ff;
     text-decoration: none;
-    font-size: 1.4rem;
-    color: #3b3b3b;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
 }
 
 nav a:hover {
-    color: #000000;
+    color: #00D2FF;
 }
 
-.equipo-section {
+/*----------*/
+
+.team-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
+    margin-bottom: 40px;
 }
 
-.logo2 {
-    padding: 32px;
+h2 { /* "Conce al equipo" */
+    color: #cbd5ff;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    padding: 20px;
 }
 
-.descripcion {
-    font-size: 1.2rem;
-}
-
-.equipo-section h2 {
-    font-size: 2rem;
-    padding: 28px;
-}
-
-.integrantes-card {
+.members-card {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -67,7 +98,7 @@ nav a:hover {
     max-width: 1200px;
 }
 
-.integrante-card {
+.member-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,20 +106,96 @@ nav a:hover {
     flex: 1;
     min-width: 280px;
     max-width: 350px;
+    min-height: 640px;
     padding: 12px;
 
-    border: 3px solid #e83046;
-    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 1s;
 }
 
-.integrante-card h3 {
-    font-size: 1.2rem;
-    padding-top: 32px;
+.member-card:hover {
+    border-color: #00D2FF;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform: translateY(-8px);
 }
 
-.integrante-card p {
-    word-wrap: break-word;
-    line-height: 1.5;
-    padding: 32px 30px;
-    color: #3b3b3b;
+.member-name {   
+
+    font-weight: 800;
+    color: #1d8af6;
+    padding: 32px 0;
+}
+
+.member-desc {
+    color: #a0aec0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.member-card img {
+    filter: grayscale(100%);
+    border: 2px solid #8A2BE2;
+    border-radius: 100%;
+}
+
+/*--Footer--*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 16px;
+    font-size: 16px;
+    gap: 80px;
+    color: #cbd5ff;
+    background:  #050a18;
+    box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.597);
+}
+
+footer div {
+    padding-right: 80px;
+    min-height: 80px;
+    box-shadow: 2px 0px 0 rgba(69, 67, 67, 0.185);
+}
+
+footer a, p {
+    margin-bottom: 2px;
+}
+
+.column1 {
+    display: flex;
+    align-items: center;
+    box-shadow:
+        -2px 0px 0 rgba(110, 106, 106, 0.185),
+        2px 0px 0 rgba(110, 106, 106, 0.185);
+    padding-left: 80px;
+}
+
+.column2 ul, .column3 ul{
+    list-style-type: none;
+}
+
+.column2 li {
+    text-align: start;
+}
+
+.column2 a, .column3 a {
+    text-decoration: none;
+    color: #cbd5ff;
+}
+
+.column2 a:hover, 
+.column3 a:hover {
+    color: #00D2FF;
+}
+
+.column4 p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
