@@ -40,4 +40,4 @@ El sitio está compuesto por las siguientes secciones:
 ## 📎 Repositorio
 
 Podés ver el proyecto en GitHub:  
-👉 [https://github.com/NikolasRamos/Programacion3-tp1](https://github.com/NikolasRamos/Programacion3-tp1)
+👉 [https://nikolasramos.github.io/Programacion3-tp1/pages/servicios.html](https://nikolasramos.github.io/Programacion3-tp1/pages/servicios.html)
