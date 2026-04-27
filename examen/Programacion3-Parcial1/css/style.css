@@ -1,0 +1,32 @@
+/* Colores modo claro */
+:root {
+    --color-fondo: #ffffff;
+    --color-superficie: #f8f8f8;
+    --color-primario: #e50914;
+    --color-secundario: #00b4d8;
+    --color-texto: #1b1b1b;
+    --color-texto-suave: #2b2b2b;
+    --color-texto-fondo: #d3d3d365;
+    --color-borde: #bbbbbb;
+}
+
+/* Colores modo oscuro */
+body.dark-mode {
+    --color-fondo: #0b0b0b;
+    --color-superficie: #141414;
+    --color-primario: #e50914;
+    --color-secundario: #00b4d8;
+    --color-texto: #f4f4f4;
+    --color-texto-suave: #D3D3D3;
+    --color-texto-fondo: #d3d3d31d;
+    --color-borde: #565656;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

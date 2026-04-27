@@ -1,0 +1,84 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    background-color: var(--color-superficie);
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    color: var(--color-texto);
+}
+
+.logo-img {
+    width: 110px;
+    height: auto;
+    margin-left: 12px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-list-right, .nav-list-left {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+    padding: 0 36px 0 36px;
+}
+
+.nav-link {
+    display: flex;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-texto-suave);
+    padding: 8px;
+}
+
+.nav-link:hover {
+    background-color: var(--color-texto-fondo);
+    border-radius: 4px;
+}
+
+#nav-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+#icon-sol {
+    display: inline-block;  /* Modo Claro: Se muestra el sol */
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/icons/sol.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#icon-luna {
+    display: none;  /* Modo Claro: Se oculta la luna */
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/icons/luna.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Modo Oscuro: Se oculta el sol y se muestra la luna */
+body.dark-mode #icon-sol {
+    display: none;
+}
+
+body.dark-mode #icon-luna {
+    display: inline-block;
+}

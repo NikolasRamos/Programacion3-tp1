@@ -1,0 +1,99 @@
+/* ====== BASE SAGA ====== */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* ====== TÍTULO ====== */
+.saga h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+.saga {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ====== TARJETAS ====== */
+.personajes_totales{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:center;
+}
+.personaje {
+    flex: 0 1;
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 550px;
+    background-color: var(--color-superficie);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--color-borde);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contenedor_personajes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Hover más moderno */
+.personaje:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px var(--color-texto-fondo);
+}
+
+/* ====== IMAGEN ====== */
+.personaje img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+/* Iconos pequeños */
+.personaje span img{
+    width: 16px;
+    height: 16px;
+}
+
+.personaje span {
+    font-size: 12px;
+    color: var(--color-primario);
+}
+
+/* ====== TEXTOS ====== */
+.personaje h3 {
+    margin: 10px 0;
+    color: var(--color-texto);
+}
+
+.personaje h4 {
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: var(--color-texto-suave);
+}
+
+/* ====== LISTA ====== */
+.personaje ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Bordes entre elementos*/
+.personaje li {
+    font-size: 14px;
+    margin: 3px 0;
+    color: var(--color-texto-suave);
+    border-bottom: 1px solid var(--color-borde);
+}
