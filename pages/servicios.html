@@ -11,57 +11,26 @@
 <body>
     
     <header>
-        <div>
-            <img src="..\assets\favicon\favicon.png" alt="Logo">
-            <h1>Nexbit</h1>
+        <div class="logo">
+            <img class="img-logo" src="..\assets\favicon\favicon.png" alt="Logo">
+            <h1 class="titulo-logo">Nexbit</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./equipo.html">Equipo</a></li>
-                <li><a href="./pedido.html">Pedido</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="./equipo.html">Equipo</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pedido.html">Pedido</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
             </ul>
-    </nav>
+        </nav>
     </header>
 
     <main>
-        <body>
-        <h1 class="titulo-catalogo">Catalogo</h1>
-        <div>
-        <section class="juego">
-            <h2>Elden Ring</h2>
-            <p>RPG de acción en mundo abierto con combates desafiantes y exploración épica.</p>
-            <hr>
-            <p class="precio">Precio: $40 USD</p>
-        </section>
-        <img  src="https://ts3.mm.bing.net/th?id=OIP.nY7f2U_YIT-AsWcE61fiyAAAAA&pid=15.1" alt="Imagen" class="imagen"/>
+        <div id="card-container">
+            <!--Se rellena con el contenido del json-->
         </div>
-        <br>
-        <div>
-        <section class="juego">
-            <h2>Minecraft</h2>
-            <p>Juego de construcción y supervivencia con mundos infinitos y creatividad sin límites.</p>
-            <hr>
-            <p class="precio">Precio: $30 USD</p>
-        </section>
-        <img src="https://static.wikia.nocookie.net/wikiinde/images/8/82/Minecraft.jpg/revision/latest/scale-to-width-down/1000?cb=20150902020013&path-prefix=es" alt="Imagen" class="imagen"/>
-        </div>
-        <br>
-        <div>
-        <section class="juego">
-            <h2>The Legend of Zelda: Tears of the Kingdom</h2>
-            <p>Aventura épica en Hyrule con exploración aérea, poderes nuevos y narrativa profunda.</p>
-            <hr>
-            <p class="precio">Precio: $70 USD</p>
-        </section>
-        <img src="https://assetsio.gnwcdn.com/4034512-tearsofthekingdom.jpg?width=690&quality=85&format=jpg&dpr=1.5&auto=webp" alt="Imagen" class="imagen"/>
-        </div>
-        <br>
-        
-        </body>
     </main>
 
     <footer>
@@ -92,5 +61,6 @@
         </div>
     </footer>
 
+    <script type="module" src="../js/juegos.js"></script>
 </body>
 </html>
