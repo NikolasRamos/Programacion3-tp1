@@ -2,7 +2,7 @@ const cardContainer = document.querySelector('#card-container')
 
 async function getJuegos() {
     try {
-        const response = await fetch('http://localhost:3000/juegos')
+        const response = await fetch('https://programacion3-tp3.onrender.com')
         const data = await response.json()
         console.log(response)
         console.log(data)
