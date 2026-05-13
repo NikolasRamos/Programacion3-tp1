@@ -17,11 +17,7 @@
         </div>
     </header>
     <main>
-<<<<<<< HEAD
         <form action="https://programacion3-tp3.onrender.com/login" method="POST">
-=======
-        <form id= "registroForm" action="http://localhost:3000/api/login" method="POST">
->>>>>>> 9748c21d3429fbd5bc7e828d57e83ed39ff4a085
         <h2>Registrate en Nexbit</h2>
         <div>
             <label>Usuario</label>
@@ -41,30 +37,20 @@
     </footer>
 
     <script>
-<<<<<<< HEAD
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita el envío real del formulario
-            // Puedo agregar una validacion
-            window.location.href = '../index.html'; // Redirige a la página principal
+        document.getElementById('registroForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        const usuario = document.getElementById('usuario').value.trim();
+        const clave = document.getElementById('clave').value.trim();
+
+        if (usuario === "" || clave === "") {
+            alert("Debe ingresar datos correctos para ingresar");
+            return;
+        }
+
+        window.location.href = "../index.html";
         });
     </script>
-=======
-document.getElementById('registroForm').addEventListener('submit', function(event) {
-  event.preventDefault(); 
-
-    const usuario = document.getElementById('usuario').value.trim();
-    const clave = document.getElementById('clave').value.trim();
-
-    if (usuario === "" || clave === "") {
-    alert("Debe ingresar datos correctos para ingresar");
-    return;
-    }
-
-  
-    window.location.href = "../index.html";
-});
-</script>
->>>>>>> 9748c21d3429fbd5bc7e828d57e83ed39ff4a085
 
 </body>
 </html>
