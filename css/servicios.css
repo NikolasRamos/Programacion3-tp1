@@ -1,4 +1,4 @@
-/* Estilos globales*/
+
 * {
     margin:0;
     padding:0;
@@ -68,83 +68,35 @@ nav a {
 nav a:hover {
     color: #00D2FF;
 }
-
-/*----------*/
-
-.team-section {
-    display: flex;
-    flex-direction: column;
+.titulo-catalogo {
+    text-align: center;
+    color: #6A1B9A;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-bottom: 40px;
+}
+.juego {
+    margin: auto;
+    display: block;
+    width: 33%;
+    background: #24273d;
+    color: #00D2FF;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     align-items: center;
     align-content: center;
-    margin-bottom: 40px;
+    text-align: center
 }
-
-h2 { /* "Conce al equipo" */
-    color: #cbd5ff;
-    font-size: 2.3rem;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 40px;
-    padding: 20px;
+p.precio {
+    font-weight: bold;
+    text-decoration: underline;
 }
-
-.members-card {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 32px;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1200px;
+img{
+    display: block;
+    margin: auto;
+    width: 33%;
 }
-
-.member-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    flex: 1;
-    min-width: 280px;
-    max-width: 350px;
-    min-height: 640px;
-    padding: 12px;
-
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1); 
-    border-radius: 20px;
-    padding: 32px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    transition: transform 1s;
-}
-
-.member-card:hover {
-    border-color: #00D2FF;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    transform: translateY(-8px);
-}
-
-.member-name {   
-
-    font-weight: 800;
-    color: #1d8af6;
-    padding: 32px 0;
-}
-
-.member-desc {
-    color: #a0aec0;
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-.member-card img {
-    filter: grayscale(100%);
-    border: 2px solid #8A2BE2;
-    border-radius: 100%;
-}
-
-/*--Footer--*/
-
 footer {
     display: flex;
     align-items: center;

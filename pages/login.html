@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexbit 📽️ - Login</title>
+    <meta name="description" content="Nexbit - Login" />
+    <link rel="icon" href="../assets/favicon/logo-nexbit.png" />
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="../assets/favicon/favicon.png" alt="logo" />
+        <h1>Nexbit</h1>
+      </div>
+    </header>
+    <main>
+      <form action="http://localhost:3000/api/login" method="POST">
+        <h2>Ingresa a Nexbit</h2>
+        <div>
+          <label>Usuario</label>
+          <input type="text" name="usuario" placeholder="Usuario">
+        </div>
+        <div>
+          <label>Contraseña</label>
+          <input type="password" name="password" placeholder="Password">
+        </div>
+        <button type="submit">Ingresar</button>
+        <p>¿No eres miembro? <a href="registro.html">Regístrate</a></p>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Nexbit - Todos los derechos reservados</p>
+    </footer>
+    
+      <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío real del formulario
+            // Puedo agregar una validacion
+            window.location.href = 'http://127.0.0.1:5500/index.html'; // Redirige a la página principal
+        });
+    </script>
+  </body>
+</html>
