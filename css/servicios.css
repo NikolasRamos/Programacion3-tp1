@@ -26,6 +26,21 @@ main {
     padding-bottom: 40px;
 }
 
+/* Buscador */
+#buscador {
+    background-color: #24273d;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #292e59;
+    width: 400px;
+}
+
+#buscador:hover, #buscador:focus {
+    border: 2px solid #0066CC;
+    color: #00D2FF;
+    outline: none;
+}
+
 /* loader */
 .loader-container {
     display: flex;
@@ -36,8 +51,8 @@ main {
 }
 
 .loader {
-    border: 8px solid var(--color-crema);
-    border-top: 8px solid var(--color-loader);
+    border: 8px solid rgba(255, 255, 255, 0.27);;
+    border-top: 8px solid rgba(121, 121, 121, 0.318);;
     border-radius: 50%;
     width: 50px;
     height: 50px;
