@@ -35,7 +35,7 @@ async function getJuegos() {
         cardContainer.innerHTML = `
             <div class="loader-container">
                 <div class="loader"></div>
-                <p>Cocinando los datos, por favor espera...</p>
+                <p>Cargando los juegos, por favor espera...</p>
             </div>
         `;
 
