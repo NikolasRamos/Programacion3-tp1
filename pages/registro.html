@@ -17,40 +17,23 @@
         </div>
     </header>
     <main>
-        <form action="https://programacion3-tp3.onrender.com/login" method="POST">
-        <h2>Registrate en Nexbit</h2>
-        <div>
-            <label>Usuario</label>
-            <input type="text" id="usuario" name="usuario" placeholder="Usuario">
-        </div>
-        <div>
-            <label>Contraseña</label>
-            <input type="password" id="clave" name="password" placeholder="Password">
-        </div>
-        <button type="submit">Registrate</button>
-        <p>¿Ya tienes una cuenta? <a href="login.html">Iniciar Sesion</a></p>
+        <form id="registroForm">
+            <h2>Registrate en Nexbit</h2>
+            <div>
+                <label>Usuario</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+            </div>
+            <div>
+                <label>Contraseña</label>
+                <input type="password" id="clave" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Registrate</button>
+            <p>¿Ya tienes una cuenta? <a href="login.html">Iniciar Sesion</a></p>
         </form>
     </main>
 
     <footer>
         <p>&copy; 2026 Nexbit - Todos los derechos reservados</p>
     </footer>
-
-    <script>
-        document.getElementById('registroForm').addEventListener('submit', function(event) {
-        event.preventDefault(); 
-
-        const usuario = document.getElementById('usuario').value.trim();
-        const clave = document.getElementById('clave').value.trim();
-
-        if (usuario === "" || clave === "") {
-            alert("Debe ingresar datos correctos para ingresar");
-            return;
-        }
-
-        window.location.href = "../index.html";
-        });
-    </script>
-
 </body>
 </html>
