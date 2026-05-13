@@ -5,8 +5,6 @@
 body {
     background: radial-gradient(circle at top right, #1a1c2c, #050a18);
     background-attachment: fixed;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
 
@@ -20,9 +18,8 @@ main {
 
 .titulo-catalogo {
     text-align: center;
-    color: #6A1B9A;
-    font-weight: bold;
-    text-decoration: underline;
+    font-size: 40px;
+    color: var(--texto);
     padding-bottom: 40px;
 }
 

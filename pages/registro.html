@@ -6,18 +6,18 @@
     <title>Nexbit - Register</title>
     <meta name="description" content="Nexbit - Login" />
     <link rel="icon" href="../assets/favicon/logo-nexbit.png" />
-    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/registro.css" />
 </head>
 
 <body>
     <header>
-    <div>
-        <img src="../assets/favicon/favicon.png" alt="logo" />
-        <h1>Nexbit</h1>
-    </div>
+        <div class="logo">
+            <img class="img-logo" src="..\assets\favicon\favicon.png" alt="Logo">
+            <h1 class="titulo-logo">Nexbit</h1>
+        </div>
     </header>
     <main>
-        <form action="http://localhost:3000/api/login" method="POST">
+        <form action="https://programacion3-tp3.onrender.com/login" method="POST">
         <h2>Registrate en Nexbit</h2>
         <div>
             <label>Usuario</label>
@@ -40,7 +40,7 @@
         document.getElementById('loginForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Evita el envío real del formulario
             // Puedo agregar una validacion
-            window.location.href = 'http://127.0.0.1:5500/index.html'; // Redirige a la página principal
+            window.location.href = '../index.html'; // Redirige a la página principal
         });
     </script>
 
