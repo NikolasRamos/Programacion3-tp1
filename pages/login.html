@@ -21,11 +21,11 @@
         <h2>Ingresa a Nexbit</h2>
         <div>
           <label>Usuario</label>
-          <input type="text" name="usuario" placeholder="Usuario">
+          <input type="text" id="usuario" name="usuario" placeholder="Usuario">
         </div>
         <div>
           <label>Contraseña</label>
-          <input type="password" name="password" placeholder="Password">
+          <input type="password" id="clave" name="password" placeholder="Password">
         </div>
         <button type="submit">Ingresar</button>
         <p>¿No eres miembro? <a href="registro.html">Regístrate</a></p>
@@ -36,12 +36,21 @@
       <p>&copy; 2026 Nexbit - Todos los derechos reservados</p>
     </footer>
     
-      <script>
+  <script>
         document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita el envío real del formulario
-            // Puedo agregar una validacion
-            window.location.href = '../index.html'; // Redirige a la página principal
-        });
-    </script>
+        event.preventDefault();
+
+    const usuario = document.getElementById('usuario').value.trim();
+    const clave = document.getElementById('clave').value.trim();
+
+    if (usuario === "" || clave === "") {
+    alert("Debe ingresar datos correctos para ingresar");
+    return;
+    }
+
+  
+    window.location.href = "../index.html";
+});
+</script>
   </body>
 </html>
