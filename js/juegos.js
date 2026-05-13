@@ -23,8 +23,9 @@ async function getJuegos() {
         data.forEach((juegos) => {
             const div = document.createElement('div')
             div.classList.add('card')
+            div.id = `id-${juegos.id}`
 
-            div.innerHTML = `
+            div.innerHTML = `       
             <div class="contenedor-img">
                 <img class="card-img"
                     src="${juegos.img}"
@@ -34,6 +35,7 @@ async function getJuegos() {
             <div class="card-titulo"><h3>${juegos.nombre}</h3></div>
             <div class="card-valor"><h3>${juegos.precio}</h3></div>
             <div class="card-descripcion"><h3>${juegos.descripcion}</h3></div>
+            <div class="card-genero"><h3>${juegos.genero}</h3></div>
             `
 
             cardContainer.append(div)
