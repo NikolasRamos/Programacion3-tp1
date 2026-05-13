@@ -3,8 +3,7 @@
 @import url(./style.css);
 
 body {
-    background: linear-gradient(135deg, #0a0f1c, #0d1b2a);
-    color: white;
+    color: rgb(215, 215, 215);
 }
 
 .hero {

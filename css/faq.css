@@ -10,9 +10,6 @@ main {
 }
 
 body {
-    background: radial-gradient(circle at top right, #1a1c2c, #050a18);
-    background-attachment: fixed;
-    margin: 0;
     color: #cbd5ff;
     background-image: url("../assets/img/contacto/Fondo_contacto.png");
     background-size: cover;       
