@@ -33,10 +33,11 @@ function renderEquipo(lista) {
         div.id = `id-${miembro.id}`;
 
         div.innerHTML = `
-            <div class="member-content">
-                <h3 class="member-name">${miembro.nombre}</h3>
-                <p class="member-role">${miembro.rol}</p>
+            <div class="contenedor-img">
+            <img src="${miembro.img}" alt="Foto de ${miembro.nombre}">
             </div>
+            <div class="member-name"><h3>${miembro.nombre}</h3></div>
+            <div class="member-desc"><p>${miembro.descripcion}</p></div>
         `;
 
         memberContainer.append(div);
